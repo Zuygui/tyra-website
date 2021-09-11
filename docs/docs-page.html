@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Tyra - Documentation</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="icon" href="../assets/BotLogo.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="../assets/BotLogo.png" width="40" height="40" alt="logo"><span class="logo-text">Tyra<span class="text-alt">Docs</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://github.com/Zuygui/tyra"><i class="fab fa-github fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://discord.gg/WbaGEmguvG"><i class="fab fa-discord fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="https://www.tyra.ml" class="btn btn-primary d-none d-lg-flex">Home</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Informations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Engines</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Libraries</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Source Code</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Default Configuration</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Version</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Obligations</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Start developement tools</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Moderation Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">warn, unwarn and infractions</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">mute, tempmute and unmute</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">kick, ban and tempban</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Configurations Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">config</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">autorole and reaction role</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">tickets</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">captcha</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">report a user</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">userinfo, serverinfo and roleinfo</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Developers Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">stop and reboot</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">eval</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">banserver</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Comunity Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">economy system</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">levels system</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">fun commands</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Admin Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">lock unlock</a></li>				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">close, open and antiraid</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2021-09-11</span></h1>
+					    <section class="docs-intro">
+						    <p>The default prefix of Tyra is ">".</p>
+						</section><!--//docs-intro-->
+					     <h5></h5>
+						<p>This bot aims to replace all the others in order to limit the case: "members: 5", "bots: 8".</p>
+						<p>We use Node.js version 12 minimum for our robot in order to be able to freely run the discord.js version 12 library.</p>
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Informations</h2>
+						<p></p>
+						<p></p>
+						<h5>Main duties</h5>
+						<ul>
+						    <li><strong class="me-1">Moderation system</li>
+						    <li><strong class="me-1">Levels system</li>
+						    <li><strong class="me-1">Fun system</li>
+						</ul>                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Engines</h2>
+						<p>as said above, we are using Node.js specifically above version 12</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Libraries</h2>
+						<p>We also use the discord.js library and many others.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Source code</h2>
+						<p>Our code is copyrighted, so you cannot use that code for yourself. You must follow the orders and instuctions given in the installation category</p>
+						<p>We also reserve the right to ban the bot from any of your servers if it violates copyright or misuses our bot.</p>
+						
+					</section><!--//section-->
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Default configuration</h2>
+						<p>Our bot has a default configuration that you can modify. The default prefix is ​​">" but it is configurable.</p>
+					</section><!--//section-->
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">Version</h2>
+						<p>Our robot is in its first version and the bugs are not hidden, let us know by joining our support discord.</p>
+					</section><!--//section-->
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+						    <p>We will see how to contribute to our bot.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Obligations</h2>
+						<p>Our bot is open-source only so that you can contribute, you may not under any circumstances (without permission of the developers) copy and use our code for your benefit.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Installation</h2>
+						<p>Start by cloning our github repository in order to contribute by placing the command:<code>git clone https://github.com/Zuygui/tyra.git</code></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Start developpement tools</h2>
+						<p>Launch our bot to test at home using the command: <code>node .</code></p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Moderation Commands</h1>
+					    <section class="docs-intro">
+						    <p>Our bot has a manual moderation system to make it easier for you against disrespectful members.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Warn, Unwarn and infractions</h2>
+						<p>You can notify a member with the command: <code>[prefix]warn [user] [reason]</code>. You can also remove a warning with the command: <code>[prefix]unwarn [user/idwarn]</code> tandit that the command to see the number of infringements will be available during v2.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Mute, Unmute and Tempmute</h2>
+						<p>You can mute a member (can no longer send a message) for an indefinite period of time with the command: <code>[prefix]mute [user] [reason]</code> and give him back his voice with the command: <code>[prefix]unmute [user]</code>. You can also mute a member for a specified period of time with the command: <code>[prefix]tempmute [user/duration] [duration/user]</code>.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Kick, Ban and Tempban</h2>
+						<p>You can exclude a member (can return) with the command: <code>[prefix]kick [user] [reason]</code> definitively exclude it with the command: <code>[prefix]ban [user] [reason]</code>. You can also ban for a fixed period with the command: <code>[prefix]tempban [user/duration] [duration/user]</code>.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Configuration Commands</h1>
+					    <section class="docs-intro">
+						    <p>Our bot has the ability to be configured differently by each server, let's see how.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Configuration</h2>
+						<p>For now, you can only configure the prefix with the command: <code>[prefix]prefix [optional[new prefix]]</code></p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">AutoRole and reaction role</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Tickets</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Utilities Commands</h1>
+					    <section class="docs-intro">
+						    <p>We will document you on our utility commands.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Captcha</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Report a user</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">UserInfo, ServerInfo and RoleInfo</h2>
+						<p>You can retrieve the information of a user with <code> [prefix]userinfo [user] </code> and of a role with <code> [prefix]roleinfo [role] </code>. You can also retrieve server information by doing <code> [prefix]serverinfo </code></p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Developers Commands</h1>
+					    <section class="docs-intro">
+						    <p>Our developers have their own commands that allow them to improve and test the bot.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Stop and reboot</h2>
+						<p>Use <code>[prefix]shutdown</code> to stop the bot and use <code>[prefix]reboot</code> to reboot this bot.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Eval</h2>
+						<p>Use <code> [prefix]eval [jscode]</code> to execute javascript code.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">BanServer</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Community Commands</h1>
+					    <section class="docs-intro">
+						    <p>We have also thought of orders for your community !</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Economy system</h2>
+						<p>use classic commands for economy.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Level system</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-3">
+							<h2 class="section-heading">Fun commands</h2>
+						<p>We let you look for them yourself ... HAHAHAH (evil laugh)</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Admin Commands</h1>
+					    <section class="docs-intro">
+						    <p>The commands for bosses (the best are those who use tyra) and admins!</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-8-1">
+						<h2 class="section-heading">Lock, Unlock</h2>
+						<p>Use <code>[prefix]lock [channel(s)]</code> to lock channels, and use <code>[prefix]unlock [channel(s)]</code> to unlock channels.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-8-3">
+							<h2 class="section-heading">Close, Open and Antiraid</h2>
+						<p>We do not provide these systems with v1.x.x but it can be put in future versions.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="https://discord.com/Zuygui/tyra"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="https://discord.gg/WbaGEmguvG"><i class="fab fa-discord fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
